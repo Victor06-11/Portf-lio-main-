@@ -1,0 +1,74 @@
+#s-projects {
+  padding: 120px 0;
+
+  @include responsive-desktop {
+    padding: $gap-7 20px;
+  }
+
+  .grid-layout {
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #565656;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-top: 12px;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    .projects {
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 16px;
+
+      transition: transform 0.3s ease;
+    }
+
+    .project img:hover {
+      transform: scale(1.02);
+    }
+
+    .project h3 {
+      font-size: 2.4rem;
+      margin: 24px 0 16px;
+    }
+
+    .project p {
+      font-size: 1.8rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .tag {
+      background: #f4f4f4;
+      color: #333;
+      font-size: 1.6rem;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      background: #efe9ff;
+      color: #774aff;
+    }
+  }
+}

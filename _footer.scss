@@ -1,0 +1,97 @@
+footer {
+  background-image: url("../image/hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0;
+
+  article {
+    height: auto;
+    background-color: #fff;
+    color: #000;
+    padding: 96px 20px;
+    margin: 40px auto;
+    border-radius: 32px;
+    max-width: 95%;
+  }
+
+  .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include responsive-tablet {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+
+  span {
+    @include responsive-tablet {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    color: #565656;
+    margin: 16px 0;
+
+    b {
+      color: #232323;
+      font-weight: 600;
+    }
+  }
+
+  .name {
+    color: #232323;
+    font-weight: 600;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include responsive-tablet {
+      width: 100%;
+      text-align: center;
+    }
+
+    h3 {
+      color: #232323;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include responsive-tablet {
+      width: 100%;
+    }
+
+    li {
+      color: #986dff;
+      font-size: 1.8rem;
+
+      a {
+        @include hover-link();
+        color: #986dff;
+        position: relative;
+      }
+    }
+  }
+
+  @include responsive-desktop {
+    .grid-layout {
+      flex-wrap: wrap;
+      gap: $gap-5;
+    }
+  }
+}

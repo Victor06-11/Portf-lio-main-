@@ -1,0 +1,65 @@
+#s-about {
+  padding: 120px 0px;
+
+  @include responsive-desktop {
+    padding: $gap-7 20px;
+  }
+
+  .grid-layout {
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive-tablet {
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #565656;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-top: 12px;
+      font-size: 4rem;
+      font-weight: 500;
+    }
+
+    > div:nth-child(2) {
+      width: 70%;
+      display: flex;
+      gap: 24px;
+      flex-direction: column;
+
+      @include responsive-tablet {
+        width: 100%;
+      }
+
+      @include responsive-desktop {
+        flex-wrap: wrap;
+        gap: $gap-4;
+      }
+
+      h4 {
+        font-size: 3.2rem;
+        font-weight: 500;
+
+        @include responsive-tablet {
+          font-size: 2.8rem;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: #565656;
+        line-height: 150%;
+
+        b {
+          color: #232323;
+        }
+      }
+    }
+  }
+}
